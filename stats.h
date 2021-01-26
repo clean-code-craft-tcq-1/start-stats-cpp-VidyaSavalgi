@@ -4,7 +4,7 @@
      double stat;
  };
 namespace Statistics {
-    void ComputeStatistics(const std::vector<stat>& statinput );
+    void ComputeStatistics(const std::vector<statsarray>& statinput );
     double CalculateAvg(const std::vector<statsarray>& statinput, int size );
     double CalculateMax(const std::vector<statsarray>& statinput, int size);
     double CalculateMin(const std::vector<statsarray>& statinput, int size);
