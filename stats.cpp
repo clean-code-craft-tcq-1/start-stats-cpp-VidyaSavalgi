@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-void ComputeStatistics(const std::vector<stat>& statinput)
+void ComputeStatistics(const std::vector<statsarray>& statinput)
 {
     //Implement statistics here
     std::vector<stat>& arstatarray;
@@ -26,7 +26,7 @@ void ComputeStatistics(const std::vector<stat>& statinput)
     Maximum = CalculateMax(arstatarray, size);
     Minimum =CalculateMin(arstatarray, size);
 } 
-double CalculateAvg(const std::vector<stat>& statinput, int size )
+double CalculateAvg(const std::vector<statsarray>& statinput, int size )
 {
     double sum = 0;
     double Avg = 0;
@@ -39,7 +39,7 @@ double CalculateAvg(const std::vector<stat>& statinput, int size )
     return Avg;
 }
 
-double CalculateMax(const std::vector<stat>& statinput, int size)
+double CalculateMax(const std::vector<statsarray>& statinput, int size)
 {
     double Max = statinput[0];
     for(int i=1;i<size;i++)
@@ -52,7 +52,7 @@ double CalculateMax(const std::vector<stat>& statinput, int size)
     return Max;
 }
 
-double CalculateMin(const std::vector<stat>& statinput, int size)
+double CalculateMin(const std::vector<statsarray>& statinput, int size)
 {
      double Min = statinput[0];
     for(int i=1;i<size;i++)
