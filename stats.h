@@ -2,7 +2,7 @@
  struct statsarray
  {
      double stat;
- }
+ };
 namespace Statistics {
     void ComputeStatistics(const std::vector<stat>& statinput );
     double CalculateAvg(const std::vector<stat>& statinput, int size );
