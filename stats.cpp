@@ -3,12 +3,7 @@
 using namespace std;
 int main()
 {
-Statistics::Statistics()
-{
-}
-Statistics::~Statistics()
-{
-}
+
     
 void Statistics::ComputeStatistics(const std::vector<float>& report)
 {
