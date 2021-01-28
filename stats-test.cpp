@@ -2,8 +2,10 @@
 #include <iostream>
 #include "catch.hpp"
 #include "stats.h"
-using namespace std;
 #include <cmath>
+using namespace std;
+using namespace Statistics;
+
 //Statistics obj;
 //float myarray[4] = {1.5, 8.9, 3.2, 4.5};
 TEST_CASE("reports average, minimum and maximum") {
