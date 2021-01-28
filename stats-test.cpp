@@ -9,15 +9,16 @@ using namespace std;
 TEST_CASE("reports average, minimum and maximum") {
     auto computedStats = Statistics::ComputeStatistics({1.5, 8.9, 3.2, 4.5});
     float epsilon = 0.001;
-    cout<<(computedStats.Average - 4.525)<<endl;
-    cout<<(std::abs(computedStats.Average - 4.525) )<<endl;
     REQUIRE(std::abs(computedStats.Average - 4.525) < epsilon);
     REQUIRE(std::abs(computedStats.Maximum - 8.9) < epsilon);
     REQUIRE(std::abs(computedStats.Minimum - 1.5) < epsilon);
 }
 
-/*TEST_CASE("average is NaN for empty array") {
+TEST_CASE("average is NaN for empty array") {
     auto computedStats = Statistics::ComputeStatistics({});
+    REQUIRE(std::isnan(computedStats.Average ) == true);
+    REQUIRE(std::isnan(computedStats.Maximum )  == true);
+    REQUIRE(std::isnan(computedStats.Minimum )  == true);
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
@@ -25,7 +26,7 @@ TEST_CASE("reports average, minimum and maximum") {
     //Use http://www.cplusplus.com/reference/cmatAverage/
 }
 
-TEST_CASE("raises alerts when max is greater than threshold") {
+/*TEST_CASE("raises alerts when max is greater than threshold") {
     EmailAlert emailAlert;
     LEDAlert ledAlert;
     std::vector<IAlerter*> alerters = {&emailAlert, &ledAlert};
