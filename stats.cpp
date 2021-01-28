@@ -22,7 +22,7 @@ double ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
     double sum = 0;
     double Avg = 0;
     std::vector<double>& *iter;
-    for(iter = report->begin();iter< report->end();iter++)
+    for(iter = report.begin();iter< report.end();iter++)
     {
         sum = sum + report[iter];
     }
