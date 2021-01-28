@@ -15,14 +15,16 @@ class ComputeAVGMaxMin
     double CalculateMin(const std::vector<double>& report);
 };
    ComputeAVGMaxMin ComputeStatistics(const std::vector<double>& report);
-  
-class EmailAlert
+class IAlerter
+{
+};
+class EmailAlert::public IAlerter
 {
     public:
     bool emailSent;
 };
 
-class LEDAlert
+class LEDAlert::public IAlerter
 {
      public:
       bool ledGlows;
