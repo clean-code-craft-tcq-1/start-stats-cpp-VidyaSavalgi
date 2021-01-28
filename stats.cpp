@@ -10,6 +10,9 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<double>& report
     //Implement statistics here
     float epsi = 0.001;
     ComputeAVGMaxMin statreport;
+    statreport.Average = 0;
+    statreport.Maximum = 0;
+    statreport.Minimum = 0;
     statreport.Average = statreport.CalculateAvg(report);
     statreport.Maximum = statreport.CalculateMax(report);
     statreport.Minimum = statreport.CalculateMin(report);
