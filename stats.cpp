@@ -85,6 +85,7 @@ void statsAlerter::checkAndAlert(const std::vector<double>& alertvalues)
         checkEmailAlert.emailSent = true;
         checkLEDAlert.ledGlows = true;
     }
-
+cout<<checkEmailAlert.emailSent<<endl;
+    cout<<checkLEDAlert.ledGlows<<endl;
 
 }
