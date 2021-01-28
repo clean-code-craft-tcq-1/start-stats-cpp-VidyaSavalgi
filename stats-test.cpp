@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
-
+#include <iostream>
 #include "catch.hpp"
 #include "stats.h"
 
@@ -8,7 +8,9 @@
 //float myarray[4] = {1.5, 8.9, 3.2, 4.5};
 TEST_CASE("reports average, minimum and maximum") {
     auto computedStats = Statistics::ComputeStatistics({1.5, 8.9, 3.2, 4.5});
-    double epsilon = 0.001;
+    float epsilon = 0.001;
+    cout<<(computedStats.Average - 4.525)<<endl;
+    cout<<(std::abs(computedStats.Average - 4.525) )<<endl;
     REQUIRE(std::abs(computedStats.Average - 4.525) < epsilon);
     REQUIRE(std::abs(computedStats.Maximum - 8.9) < epsilon);
     REQUIRE(std::abs(computedStats.Minimum - 1.5) < epsilon);
