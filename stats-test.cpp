@@ -2,7 +2,7 @@
 #include <iostream>
 #include "catch.hpp"
 #include "stats.h"
-
+using namespace std;
 #include <cmath>
 //Statistics obj;
 //float myarray[4] = {1.5, 8.9, 3.2, 4.5};
