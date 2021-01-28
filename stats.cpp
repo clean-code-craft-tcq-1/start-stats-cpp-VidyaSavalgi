@@ -5,7 +5,7 @@ int main()
 {
 
     
-void ComputeStatistics(float report[])
+void Statistics::ComputeStatistics(float report[])
 {
     //Implement statistics here
     
@@ -18,7 +18,7 @@ void ComputeStatistics(float report[])
     Maximum = CalculateMax(report);
     Minimum = CalculateMin(report);
 } 
-float CalculateAvg(float report[])
+float Statistics::CalculateAvg(float report[])
 {
     float sum = 0;
     float Avg = 0;
@@ -31,7 +31,7 @@ float CalculateAvg(float report[])
     return Avg;
 }
 
-float CalculateMax(float report[])
+float Statistics::CalculateMax(float report[])
 {
     float Max = statinput[0];
     for(int i=1;i<size;i++)
@@ -44,7 +44,7 @@ float CalculateMax(float report[])
     return Max;
 }
 
-float CalculateMin(float report[])
+float Statistics::CalculateMin(float report[])
 {
      float Min = statinput[0];
     for(int i=1;i<size;i++)
