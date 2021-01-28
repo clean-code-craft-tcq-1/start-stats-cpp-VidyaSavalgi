@@ -32,7 +32,7 @@ float Statistics::CalculateAvg(float report[])
 
 float Statistics::CalculateMax(float report[])
 {
-    float Max = statinput[0];
+    float Max = report[0];
     for(int i=1;i<size;i++)
     {
        if(Max > report[i])
@@ -45,7 +45,7 @@ float Statistics::CalculateMax(float report[])
 
 float Statistics::CalculateMin(float report[])
 {
-     float Min = statinput[0];
+     float Min = report[0];
     for(int i=1;i<size;i++)
     {
        if(Min < report[i])
