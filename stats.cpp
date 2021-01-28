@@ -1,7 +1,7 @@
 #include "stats.h"
 #include "stdio.h"
 using namespace std;
-
+using namespace Statistics;
 
     
 ComputeAVGMaxMin Statistics::ComputeStatistics(float report[])
