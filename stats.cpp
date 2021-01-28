@@ -72,11 +72,11 @@ double ComputeAVGMaxMin::CalculateMin(const std::vector<double>& report)
    
     return Min;
 }
-statsAlerter Statistics::checkAndAlert(const std::vector<double>& alertvalues)
+void statsAlerter::checkAndAlert(const std::vector<double>& alertvalues)
 {
     ComputeAVGMaxMin statreport;
    statsAlerter checkstatsAlerter;
-    IAlerter IAlerterobj;
+    
     EmailAlert checkEmailAlert;
     LEDAlert checkLEDAlert;
     double max = 0;
@@ -88,5 +88,5 @@ statsAlerter Statistics::checkAndAlert(const std::vector<double>& alertvalues)
     }
 cout<<checkEmailAlert.emailSent<<endl;
     cout<<checkLEDAlert.ledGlows<<endl;
-return IAlerterobj;
+
 }
