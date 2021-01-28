@@ -1,6 +1,8 @@
 #include <vector>
-//namespace Statistics
-class Statistics 
+namespace Statistics
+{
+    
+class ComputeAVGMaxMin 
 {
     public:
        int size;
@@ -9,3 +11,5 @@ class Statistics
     float CalculateMax(float report[]);
     float CalculateMin(float report[]);
 };
+    
+}
