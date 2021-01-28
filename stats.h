@@ -3,8 +3,7 @@
 class Statistics 
 {
     public:
-    Statistics();
-    ~Statistics();
+   
     void ComputeStatistics(const std::vector<float>& report);
     float CalculateAvg(const std::vector<float>& report);
     float CalculateMax(const std::vector<float>& report);
