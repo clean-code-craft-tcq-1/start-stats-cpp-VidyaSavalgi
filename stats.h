@@ -11,5 +11,5 @@ class ComputeAVGMaxMin
     float CalculateMax(float report[]);
     float CalculateMin(float report[]);
 };
-   ComputeAVGMaxMin ComputeStatistics(float report[]);
+   ComputeAVGMaxMin ComputeStatistics(std::vector<float>& report);
 }
