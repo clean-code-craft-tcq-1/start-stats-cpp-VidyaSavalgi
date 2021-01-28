@@ -29,7 +29,7 @@ double ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
         cout<<"i"<<i<<" "<<"sum"<<sum<<endl;
     }
     Avg = sum/report.size();
-cout<<Avg
+cout<<Avg;
     return Avg;
 }
 
