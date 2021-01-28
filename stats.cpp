@@ -4,62 +4,61 @@ using namespace std;
 int main()
 {
 
-void ComputeStatistics(const std::vector<statsarray>& statinput)
+void ComputeStatistics(const std::vector<float> report)
 {
     //Implement statistics here
-    std::vector<stat>& arstatarray;
-    stat rstatarray;
+    
     int size =0;
-    double Average = 0;
-    double Maximum = 0;
-    double Minimum = 0;
-    cout<<"enter the number of elements"<<endl;
+    float Average = 0;
+    float Maximum = 0;
+    float Minimum = 0;
+    /*cout<<"enter the number of elements"<<endl;
     cin>>size;
     for(int i=0;i<size;i++)
     {
         cout<<"enter the number"<<endl;
-        cin>>rstatarray[i];
+        cin>>report[i];
     }
-    arstatarray.push_back(rstatarray)
+    report.push_back(rstatarray)*/
 
-    Average = CalculateAvg(arstatarray, size);
-    Maximum = CalculateMax(arstatarray, size);
-    Minimum =CalculateMin(arstatarray, size);
+    Average = CalculateAvg(report, size);
+    Maximum = CalculateMax(report, size);
+    Minimum = CalculateMin(report, size);
 } 
-double CalculateAvg(const std::vector<statsarray>& statinput, int size )
+float CalculateAvg(const std::vector<float> report, int size )
 {
-    double sum = 0;
-    double Avg = 0;
+    float sum = 0;
+    float Avg = 0;
     for(int i=0;i<size;i++)
     {
-        sum = sum + statinput[i];
+        sum = sum + report[i];
     }
     Avg = sum/size;
 
     return Avg;
 }
 
-double CalculateMax(const std::vector<statsarray>& statinput, int size)
+float CalculateMax(const std::vector<float> report, int size)
 {
-    double Max = statinput[0];
+    float Max = statinput[0];
     for(int i=1;i<size;i++)
     {
-       if(Max > statinput[i])
+       if(Max > report[i])
        {
-          Max =  statinput[i];
+          Max =  report[i];
        }
     }
     return Max;
 }
 
-double CalculateMin(const std::vector<statsarray>& statinput, int size)
+float CalculateMin(const std::vector<float> report, int size)
 {
-     double Min = statinput[0];
+     float Min = statinput[0];
     for(int i=1;i<size;i++)
     {
-       if(Min < statinput[i])
+       if(Min < report[i])
        {
-          Min =  statinput[i];
+          Min =  report[i];
        }
     }
     return Min;
