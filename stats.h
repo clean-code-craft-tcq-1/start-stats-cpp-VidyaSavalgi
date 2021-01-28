@@ -15,7 +15,7 @@ class ComputeAVGMaxMin
     double CalculateMin(const std::vector<double>& report);
 };
    ComputeAVGMaxMin ComputeStatistics(const std::vector<double>& report);
-    
+}   
 class EmailAlert
 {
     public:
@@ -35,4 +35,4 @@ class statsAlerter
     public:
     void checkAndAlert(const std::vector<double>& alertvalues);
 };
-}
+
