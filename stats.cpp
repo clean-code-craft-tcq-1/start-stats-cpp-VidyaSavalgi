@@ -72,7 +72,7 @@ double ComputeAVGMaxMin::CalculateMin(const std::vector<double>& report)
    
     return Min;
 }
-StatsAlerter::StatsAlerter(const float maxThreshold, std::vector<IAlerter*> alerters)
+StatsAlerter::StatsAlerter(const double maxThreshold, std::vector<IAlerter*> alerters)
 {
     
 }
