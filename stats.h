@@ -15,4 +15,24 @@ class ComputeAVGMaxMin
     double CalculateMin(const std::vector<double>& report);
 };
    ComputeAVGMaxMin ComputeStatistics(const std::vector<double>& report);
+    
+class EmailAlert
+{
+    public:
+    bool emailSent;
+};
+
+class LEDAlert
+{
+     public:
+      bool ledGlows;
+};
+class statsAlerter
+{
+    private:
+     std::vector<IAlerter*> alerters = {&emailAlert, &ledAlert};
+    const float maxThreshold = 10.2;
+    Public:
+    void checkAndAlert(const std::vector<double>& alertvalues);
+};
 }
