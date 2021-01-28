@@ -74,11 +74,12 @@ double ComputeAVGMaxMin::CalculateMin(const std::vector<double>& report)
 }
 void statsAlerter::checkAndAlert(const std::vector<double>& alertvalues)
 {
+    ComputeAVGMaxMin statreport;
     statsAlerter checkstatsAlerter;
     EmailAlert checkEmailAlert;
     LEDAlert checkLEDAlert;
     double max = 0;
-    max = statreport.CalculateMax(report);
+    max = statreport.CalculateMax(alertvalues);
     if(max > checkstatsAlerter.maxThreshold )
     {
         checkEmailAlert.emailSent = true;
