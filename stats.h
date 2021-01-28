@@ -3,9 +3,9 @@
 class Statistics 
 {
     public:
-   
-    void ComputeStatistics(const std::vector<float>& report);
-    float CalculateAvg(const std::vector<float>& report);
-    float CalculateMax(const std::vector<float>& report);
-    float CalculateMin(const std::vector<float>& report);
+       int size;
+    void ComputeStatistics(float report[]);
+    float CalculateAvg(float report[]);
+    float CalculateMax(float report[]);
+    float CalculateMin(float report[]);
 };
