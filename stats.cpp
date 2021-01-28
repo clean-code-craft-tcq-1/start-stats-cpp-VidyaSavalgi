@@ -76,7 +76,7 @@ StatsAlerter::StatsAlerter(const float maxThreshold, std::vector<IAlerter*> aler
 {
     
 }
-void StatsAlerter ::checkAndAlert(const std::vector<double>& alertvalues)
+void StatsAlerter::checkAndAlert(const std::vector<double>& alertvalues)
 {
     ComputeAVGMaxMin statreport;
    StatsAlerter *checkstatsAlerter;
