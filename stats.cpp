@@ -4,7 +4,7 @@ using namespace std;
 using namespace Statistics;
 
     
-ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<float>& report)
+ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<double>& report)
 {
     //Implement statistics here
     ComputeAVGMaxMin statreport;
@@ -17,10 +17,10 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<float>& report)
    // Maximum = CalculateMax(report);
    // Minimum = CalculateMin(report);
 } 
-float ComputeAVGMaxMin::CalculateAvg(const std::vector<float>& report)
+float ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
 {
-    float sum = 0;
-    float Avg = 0;
+    double sum = 0;
+    double Avg = 0;
     for(int i=0;i<report.size();i++)
     {
         sum = sum + report[i];
@@ -30,9 +30,9 @@ float ComputeAVGMaxMin::CalculateAvg(const std::vector<float>& report)
     return Avg;
 }
 
-float ComputeAVGMaxMin::CalculateMax(const std::vector<float>& report)
+double ComputeAVGMaxMin::CalculateMax(const std::vector<double>& report)
 {
-    float Max = report[0];
+    double Max = report[0];
     for(int i=1;i<report.size();i++)
     {
        if(Max > report[i])
@@ -43,9 +43,9 @@ float ComputeAVGMaxMin::CalculateMax(const std::vector<float>& report)
     return Max;
 }
 
-float ComputeAVGMaxMin::CalculateMin(const std::vector<float>& report)
+double ComputeAVGMaxMin::CalculateMin(const std::vector<double>& report)
 {
-     float Min = report[0];
+     double Min = report[0];
     for(int i=1;i<report.size();i++)
     {
        if(Min < report[i])
