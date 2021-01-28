@@ -8,7 +8,8 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<float>& report)
 {
     //Implement statistics here
     
-    float Average = 0;
+    float Average;
+    Average = 0.0;
     float Maximum = 0;
     float Minimum = 0;
     
