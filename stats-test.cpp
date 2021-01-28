@@ -4,10 +4,10 @@
 #include "stats.h"
 
 #include <cmath>
-Statistics obj;
-float myarray[4] = {1.5, 8.9, 3.2, 4.5};
+//Statistics obj;
+//float myarray[4] = {1.5, 8.9, 3.2, 4.5};
 TEST_CASE("reports average, minimum and maximum") {
-    auto computedStats = obj.ComputeStatistics(myarray);
+    auto computedStats = Statistics::ComputeStatistics({1.5, 8.9, 3.2, 4.5});
     float epsilon = 0.001;
     REQUIRE(std::abs(computedStats.Average - 4.525) < epsilon);
     REQUIRE(std::abs(computedStats.Maximum - 8.9) < epsilon);
