@@ -4,7 +4,7 @@ using namespace std;
 using namespace Statistics;
 
     
-ComputeAVGMaxMin Statistics::ComputeStatistics(float report[])
+ComputeAVGMaxMin Statistics::ComputeStatistics(std::vector<float>& report)
 {
     //Implement statistics here
     
@@ -12,10 +12,10 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(float report[])
     float Maximum = 0;
     float Minimum = 0;
     
-    size = sizeof(report)/sizeof(report[0])
-    Average = CalculateAvg(report);
-    Maximum = CalculateMax(report);
-    Minimum = CalculateMin(report);
+   // size = sizeof(report)/sizeof(report[0])
+  //  Average = CalculateAvg(report);
+   // Maximum = CalculateMax(report);
+   // Minimum = CalculateMin(report);
 } 
 float Statistics::CalculateAvg(float report[])
 {
