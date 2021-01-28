@@ -10,7 +10,7 @@ class ComputeAVGMaxMin
     double Average;
    double Maximum;
    double Minimum;
-    double CalculateAvg(const std::vector<double>& report);
+    float CalculateAvg(const std::vector<double>& report);
     double CalculateMax(const std::vector<double>& report);
     double CalculateMin(const std::vector<double>& report);
 };
