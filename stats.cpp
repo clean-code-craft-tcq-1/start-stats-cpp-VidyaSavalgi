@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-void ComputeStatistics(const std::vector<float> report)
+void ComputeStatistics(const std::vector<float>& report)
 {
     //Implement statistics here
     
@@ -25,7 +25,7 @@ void ComputeStatistics(const std::vector<float> report)
     Maximum = CalculateMax(report);
     Minimum = CalculateMin(report);
 } 
-float CalculateAvg(const std::vector<float> report)
+float CalculateAvg(const std::vector<float>& report)
 {
     float sum = 0;
     float Avg = 0;
@@ -38,7 +38,7 @@ float CalculateAvg(const std::vector<float> report)
     return Avg;
 }
 
-float CalculateMax(const std::vector<float> report)
+float CalculateMax(const std::vector<float>& report)
 {
     float Max = statinput[0];
     for(int i=1;i<report.size;i++)
@@ -51,7 +51,7 @@ float CalculateMax(const std::vector<float> report)
     return Max;
 }
 
-float CalculateMin(const std::vector<float> report)
+float CalculateMin(const std::vector<float>& report)
 {
      float Min = statinput[0];
     for(int i=1;i<report.size;i++)
