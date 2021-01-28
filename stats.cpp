@@ -19,12 +19,12 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<double>& report
 } 
 double ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
 {
-    const std::vector<double>&  sum = 0;
-    const std::vector<double>&  Avg = 0;
+    double  sum;
+    double  Avg;
    // std::vector<double>& *iter;
     for(auto iter = report.begin();iter< report.end();iter++)
     {
-        sum = sum + report[iter];
+        sum = sum + *iter;
     }
     Avg = sum/report.size();
 
