@@ -14,7 +14,7 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<double>& report
     statreport.Maximum = statreport.CalculateMax(report);
     statreport.Minimum = statreport.CalculateMin(report);
    cout<< statreport.Average<<endl;
-    cout<<(std::abs(statreport.Average - 4.525) < epsi );
+    cout<<(std::abs(statreport.Average - 4.525) );
     
   //  Average = CalculateAvg(report);
    // Maximum = CalculateMax(report);
@@ -31,7 +31,7 @@ float ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
         cout<<"i"<<i<<" "<<"sum"<<sum<<endl;
     }
     Avg = sum/report.size();
-cout<<Avg;
+cout<<Avg<<endl;
     return Avg;
 }
 
