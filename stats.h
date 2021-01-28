@@ -1,11 +1,8 @@
 #include <vector>
- struct statsarray
- {
-     double stat;
- };
+
 namespace Statistics {
-    void ComputeStatistics(const std::vector<statsarray>& statinput );
-    double CalculateAvg(const std::vector<statsarray>& statinput, int size );
-    double CalculateMax(const std::vector<statsarray>& statinput, int size);
-    double CalculateMin(const std::vector<statsarray>& statinput, int size);
+    void ComputeStatistics(const std::vector<float> );
+    float CalculateAvg(const std::vector<float> report, int size );
+    float CalculateMax(const std::vector<float> report, int size);
+    float CalculateMin(const std::vector<float> report, int size);
 }
