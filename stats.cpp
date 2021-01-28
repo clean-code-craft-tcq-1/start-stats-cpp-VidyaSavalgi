@@ -46,7 +46,7 @@ double ComputeAVGMaxMin::CalculateMax(const std::vector<double>& report)
     double  Max = report[0];
     for(int i=1;i<report.size();i++)
     {
-       if(Max > report[i])
+       if(Max < report[i])
        {
           Max =  report[i];
        }
@@ -60,7 +60,7 @@ double ComputeAVGMaxMin::CalculateMin(const std::vector<double>& report)
      double  Min = report[0];
     for(int i=1;i<report.size();i++)
     {
-       if(Min <report[i])
+       if(Min > report[i])
        {
           Min =  report[i];
        }
