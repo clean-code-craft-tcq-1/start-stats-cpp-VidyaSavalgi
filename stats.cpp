@@ -7,11 +7,15 @@ using namespace Statistics;
 ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<float>& report)
 {
     //Implement statistics here
+    ComputeAVGMaxMin statreport;
+    statreport.Average;
+    statreport.Maximum;
+    statreport.Minimum;
     
-    float Average;
-    Average = 0.0;
-    float Maximum = 0;
-    float Minimum = 0;
+ //   float Average;
+   // Average = 0.0;
+   // float Maximum = 0;
+   // float Minimum = 0;
     
    // size = sizeof(report)/sizeof(report[0])
   //  Average = CalculateAvg(report);
