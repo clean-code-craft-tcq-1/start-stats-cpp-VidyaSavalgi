@@ -1,8 +1,7 @@
 #include "stats.h"
 #include "stdio.h"
 using namespace std;
-int main()
-{
+
 
     
 void Statistics::ComputeStatistics(float report[])
@@ -56,4 +55,4 @@ float Statistics::CalculateMin(float report[])
     }
     return Min;
 }
-}
+
