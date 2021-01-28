@@ -29,11 +29,9 @@ class LEDAlert
 };
 class statsAlerter
 {
-    private:
-    // std::vector<IAlerter*> alerters = {&emailAlert, &ledAlert};
-    const float maxThreshold = 10.2;
     public:
-     checkAndAlert(const std::vector<double>& alertvalues);
+    const float maxThreshold = 10.2;
+     
 };
    statsAlerter checkAndAlert(const std::vector<double>& alertvalues);
 }
