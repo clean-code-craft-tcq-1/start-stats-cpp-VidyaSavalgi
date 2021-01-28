@@ -8,37 +8,32 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<float>& report)
 {
     //Implement statistics here
     ComputeAVGMaxMin statreport;
-    statreport.Average;
-    statreport.Maximum;
-    statreport.Minimum;
+    statreport.Average = CalculateAvg(report;
+    statreport.Maximum = CalculateMax(report);
+    statreport.Minimum = CalculateMin(report);
+   
     
- //   float Average;
-   // Average = 0.0;
-   // float Maximum = 0;
-   // float Minimum = 0;
-    
-   // size = sizeof(report)/sizeof(report[0])
   //  Average = CalculateAvg(report);
    // Maximum = CalculateMax(report);
    // Minimum = CalculateMin(report);
 } 
-float ComputeAVGMaxMin::CalculateAvg(float report[])
+float ComputeAVGMaxMin::CalculateAvg(const std::vector<float>& report)
 {
     float sum = 0;
     float Avg = 0;
-    for(int i=0;i<size;i++)
+    for(int i=0;i<report.size;i++)
     {
         sum = sum + report[i];
     }
-    Avg = sum/size;
+    Avg = sum/report.size;
 
     return Avg;
 }
 
-float ComputeAVGMaxMin::CalculateMax(float report[])
+float ComputeAVGMaxMin::CalculateMax(const std::vector<float>& report)
 {
     float Max = report[0];
-    for(int i=1;i<size;i++)
+    for(int i=1;i<report.size;i++)
     {
        if(Max > report[i])
        {
@@ -48,10 +43,10 @@ float ComputeAVGMaxMin::CalculateMax(float report[])
     return Max;
 }
 
-float ComputeAVGMaxMin::CalculateMin(float report[])
+float ComputeAVGMaxMin::CalculateMin(const std::vector<float>& report)
 {
      float Min = report[0];
-    for(int i=1;i<size;i++)
+    for(int i=1;i<report.size;i++)
     {
        if(Min < report[i])
        {
