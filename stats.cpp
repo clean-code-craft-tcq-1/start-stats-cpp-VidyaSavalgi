@@ -4,7 +4,7 @@ using namespace std;
 
 
     
-void Statistics::ComputeStatistics(float report[])
+ComputeAVGMaxMin Statistics::ComputeStatistics(float report[])
 {
     //Implement statistics here
     
