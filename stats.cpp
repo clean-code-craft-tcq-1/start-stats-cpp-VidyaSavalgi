@@ -19,8 +19,8 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<double>& report
 } 
 double ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
 {
-    double sum = 0;
-    double Avg = 0;
+    const std::vector<double>&  sum = 0;
+    const std::vector<double>&  Avg = 0;
    // std::vector<double>& *iter;
     for(auto iter = report.begin();iter< report.end();iter++)
     {
@@ -33,7 +33,7 @@ double ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
 
 double ComputeAVGMaxMin::CalculateMax(const std::vector<double>& report)
 {
-    double Max = report[0];
+    const std::vector<double>&  Max = report[0];
     for(int i=1;i<report.size();i++)
     {
        if(Max > report[i])
@@ -46,7 +46,7 @@ double ComputeAVGMaxMin::CalculateMax(const std::vector<double>& report)
 
 double ComputeAVGMaxMin::CalculateMin(const std::vector<double>& report)
 {
-     double Min = report[0];
+     const std::vector<double>&  Min = report[0];
     for(int i=1;i<report.size();i++)
     {
        if(Min < report[i])
