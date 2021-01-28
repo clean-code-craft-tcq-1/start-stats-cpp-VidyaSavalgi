@@ -1,7 +1,8 @@
 #include <vector>
-namespace Statistics
+//namespace Statistics
 class Statistics 
 {
+    public:
     Statistics();
     ~Statistics();
     void ComputeStatistics(const std::vector<float>& report);
