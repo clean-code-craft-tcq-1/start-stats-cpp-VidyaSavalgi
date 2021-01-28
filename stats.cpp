@@ -21,15 +21,15 @@ void ComputeStatistics(const std::vector<float> report)
     }
     report.push_back(rstatarray)*/
 
-    Average = CalculateAvg(report, size);
-    Maximum = CalculateMax(report, size);
-    Minimum = CalculateMin(report, size);
+    Average = CalculateAvg(report);
+    Maximum = CalculateMax(report);
+    Minimum = CalculateMin(report);
 } 
-float CalculateAvg(const std::vector<float> report, int size )
+float CalculateAvg(const std::vector<float> report)
 {
     float sum = 0;
     float Avg = 0;
-    for(int i=0;i<size;i++)
+    for(int i=0;i<report.size;i++)
     {
         sum = sum + report[i];
     }
@@ -38,10 +38,10 @@ float CalculateAvg(const std::vector<float> report, int size )
     return Avg;
 }
 
-float CalculateMax(const std::vector<float> report, int size)
+float CalculateMax(const std::vector<float> report)
 {
     float Max = statinput[0];
-    for(int i=1;i<size;i++)
+    for(int i=1;i<report.size;i++)
     {
        if(Max > report[i])
        {
@@ -51,10 +51,10 @@ float CalculateMax(const std::vector<float> report, int size)
     return Max;
 }
 
-float CalculateMin(const std::vector<float> report, int size)
+float CalculateMin(const std::vector<float> report)
 {
      float Min = statinput[0];
-    for(int i=1;i<size;i++)
+    for(int i=1;i<report.size;i++)
     {
        if(Min < report[i])
        {
