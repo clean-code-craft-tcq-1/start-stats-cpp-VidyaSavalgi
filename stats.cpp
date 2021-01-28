@@ -22,9 +22,9 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<double>& report
     }
     else
     {
-        statreport.Average = 0;
-        statreport.Maximum = 0;
-        statreport.Minimum = 0;
+        statreport.Average = NAN;
+        statreport.Maximum = NAN;
+        statreport.Minimum = NAN;
     }
   
     return statreport;
