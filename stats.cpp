@@ -23,6 +23,7 @@ ComputeAVGMaxMin Statistics::ComputeStatistics(const std::vector<double>& report
   //  Average = CalculateAvg(report);
    // Maximum = CalculateMax(report);
    // Minimum = CalculateMin(report);
+    return statreport;
 } 
 double ComputeAVGMaxMin::CalculateAvg(const std::vector<double>& report)
 {
