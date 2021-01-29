@@ -89,9 +89,9 @@ void StatsAlerter::checkAndAlert(const std::vector<double>& alertvalues)
     max = statreport.CalculateMax(alertvalues);
     if(max > checkstatsAlerter->maxThreshold )
     {
-       // checkEmailAlert.emailSent = true;
-       // checkLEDAlert.ledGlows = true;
-        checkstatsAlerter->alerters = true; 
+       checkEmailAlert.emailSent = true;
+       checkLEDAlert.ledGlows = true;
+        //checkstatsAlerter->alerters = true; 
     }
 cout<<checkEmailAlert.emailSent<<endl;
     cout<<checkLEDAlert.ledGlows<<endl;
