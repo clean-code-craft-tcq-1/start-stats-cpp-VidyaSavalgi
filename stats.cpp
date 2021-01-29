@@ -75,7 +75,8 @@ double ComputeAVGMaxMin::CalculateMin(const std::vector<double>& report)
 StatsAlerter::StatsAlerter(const double maxThreshold, std::vector<IAlerter*> alerters)
 {
     StatsAlerter *checkstatsAlerter;
-    checkstatsAlerter->maxThreshold = maxThreshold;
+    checkstatsAlerter->maxThreshold[0] = maxThreshold;
+    checkstatsAlerter->alerters[0] = alerters;
 }
 void StatsAlerter::checkAndAlert(const std::vector<double>& alertvalues)
 {
@@ -86,7 +87,7 @@ void StatsAlerter::checkAndAlert(const std::vector<double>& alertvalues)
     LEDAlert checkLEDAlert;
     double max = 0;
     max = statreport.CalculateMax(alertvalues);
-    if(max > checkstatsAlerter->maxThreshold )
+    if(max > checkstatsAlerter->maxThreshold[0] )
     {
         checkEmailAlert.emailSent = true;
         checkLEDAlert.ledGlows = true;
