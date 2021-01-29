@@ -34,7 +34,7 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     std::vector<IAlerter*> alerters = {&emailAlert, &ledAlert};
     //statsAlerter statsAlerterobj;
     const double maxThreshold = 10.2;
-    StatsAlerter statsAlerter(const double maxThreshold, std::vector<IAlerter*> alerters);
+    StatsAlerter statsAlerter(maxThreshold, alerters);
     statsAlerter.checkAndAlert({99.8, 34.2, 4.5, 6.7});
 cout<<emailAlert.emailSent<<endl;
     cout<<ledAlert.ledGlows<<endl;
